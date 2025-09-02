@@ -33,5 +33,19 @@ class computer extends machine{
     }
     addVM(vm){
         this.vms.push(vm);
+    }  
+}
+class VM extends Machine {
+  constructor(host, os, disk) {
+    if (host.getDiskSize() - host.getVMDiskSize() < disk) {
+      throw new Error("Not enough disk space!");
     }
+    super(os, disk);
+    this.host = host;
+    host.addVM(this);
+  }
+
+  getHost() {
+    return this.host;
+  }
 }
