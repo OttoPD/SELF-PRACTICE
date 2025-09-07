@@ -42,5 +42,5 @@ function doSomething(x){ //x=multiply1
 //    return x(3,5)//multiply1(3,5)
 return x //ruturn multiply1
 }
-const y=doSomething(multiply1)//[Function: multiply1]
+const v = doSomething(multiply1)//[Function: multiply1]
 console.log(y(2,4))//8
