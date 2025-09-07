@@ -53,5 +53,4 @@ console.log(
 
 console.log(words1.slice(2, 5));
 console.log(words1.slice(0, 3));
-
 console.log(words1.fill(null));
